@@ -109,7 +109,7 @@ header
     position: fixed
     top: 50%
     left: 50%
-    transform: translate(-70%,-55%)
+    transform: translate(-72%,-55%)
     z-index: 5
     figcaption
       margin-top: 3rem
@@ -170,7 +170,7 @@ header
     left: 50%
     z-index: -1
     transform: translate(-50%,-50%)
-    width: 80%
+    width: 70%
     margin: 0 auto
 // ====================================================
 //  concept
@@ -419,6 +419,22 @@ header
 .tabContents
   width: 700px
   margin: 0 auto
+  .formDescription
+    counter-reset: number
+    background: darken(white,7%)
+    padding: 2rem 3rem
+    border: 1px solid darken(white,12%)
+    border-radius: 5px
+    p
+      margin: 1rem 0
+      padding: 0 1rem
+      font-size: 1.5rem
+      font-weight: 300
+      text-indent: -1.5rem
+      &::before
+        margin-right: .5rem
+        counter-increment: number
+        content: counter(number)
   p
     margin: 5rem 0 2rem 0
     i
@@ -445,6 +461,9 @@ header
       color: $red
       margin-left: 1rem
       font-weight: 300
+  input[type=radio]
+    &:focus
+      outline: none
   input
     width: 100%
     height: 5rem
@@ -472,6 +491,7 @@ header
     padding: 1rem 5rem 1rem 1rem
     &:focus
       outline: 1px solid #0071e3
+      border-radius: 5px
   #companyName
     margin-top: 1rem
 .tabContentsPerson
@@ -590,7 +610,7 @@ footer
       &Border
         width: 30px
         height: 2px
-        background: $red
+        background: $subBlack
         margin-top: 1rem
         transition: .6s
         &:first-child
@@ -639,3 +659,53 @@ footer
         &:last-child
           a
             margin-right: 0
+  .firstViewWrap figure figcaption
+    white-space: nowrap
+@media screen and (max-width: 767px)
+  header
+    position: absolute
+    h1 a
+      font-size: 2.5rem
+      .dot
+        margin: 0 -.25rem 0 -.45rem
+        font-size: 2rem
+  // ====================================================
+  //  contact
+  // ====================================================
+  .contact
+    padding: 15rem 4rem 10rem
+  .tabContents
+    width: 100%
+    .sex
+      margin-top: 2rem
+    input
+      height: 6rem
+      font-size: 2.25rem
+      &[type=radio]
+        height: 2.5rem
+    select
+      font-size: 1.5rem
+      padding: 1.5rem 5rem 1.5rem 1rem
+  // =======================Company======================
+  .c
+    &-repName
+      width: 50%
+    &-postalCode,
+    &-phone,
+    &-fax
+      width: 40%
+    &-address
+      width: 100%
+    &-mail
+      width: 100%
+  // ====================================================
+  //  price
+  // ====================================================
+  .price
+    padding: 15rem 2rem 10rem
+    table
+      width: 100%
+      tr
+        td
+          &:first-child
+            width: 30%

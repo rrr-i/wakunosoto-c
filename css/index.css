@@ -330,8 +330,8 @@ header .sp {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-70%, -55%);
-          transform: translate(-70%, -55%);
+  -webkit-transform: translate(-72%, -55%);
+          transform: translate(-72%, -55%);
   z-index: 5;
 }
 
@@ -393,7 +393,7 @@ header .sp {
   z-index: -1;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -732,6 +732,28 @@ header .sp {
   margin: 0 auto;
 }
 
+.tabContents .formDescription {
+  counter-reset: number;
+  background: #ededed;
+  padding: 2rem 3rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.tabContents .formDescription p {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-indent: -1.5rem;
+}
+
+.tabContents .formDescription p::before {
+  margin-right: .5rem;
+  counter-increment: number;
+  content: counter(number);
+}
+
 .tabContents p {
   margin: 5rem 0 2rem 0;
 }
@@ -776,6 +798,10 @@ header .sp {
   font-weight: 300;
 }
 
+.tabContents input[type=radio]:focus {
+  outline: none;
+}
+
 .tabContents input {
   width: 100%;
   height: 5rem;
@@ -814,6 +840,7 @@ header .sp {
 
 .tabContents select:focus {
   outline: 1px solid #0071e3;
+  border-radius: 5px;
 }
 
 .tabContents #companyName {
@@ -959,7 +986,7 @@ footer small {
   header .humbergerBorder {
     width: 30px;
     height: 2px;
-    background: #E62980;
+    background: #555555;
     margin-top: 1rem;
     -webkit-transition: .6s;
     transition: .6s;
@@ -1030,6 +1057,63 @@ footer small {
   }
   header .sns li:last-child a {
     margin-right: 0;
+  }
+  .firstViewWrap figure figcaption {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    position: absolute;
+  }
+  header h1 a {
+    font-size: 2.5rem;
+  }
+  header h1 a .dot {
+    margin: 0 -.25rem 0 -.45rem;
+    font-size: 2rem;
+  }
+  .contact {
+    padding: 15rem 4rem 10rem;
+  }
+  .tabContents {
+    width: 100%;
+  }
+  .tabContents .sex {
+    margin-top: 2rem;
+  }
+  .tabContents input {
+    height: 6rem;
+    font-size: 2.25rem;
+  }
+  .tabContents input[type=radio] {
+    height: 2.5rem;
+  }
+  .tabContents select {
+    font-size: 1.5rem;
+    padding: 1.5rem 5rem 1.5rem 1rem;
+  }
+  .c-repName {
+    width: 50%;
+  }
+  .c-postalCode, .c-phone, .c-fax {
+    width: 40%;
+  }
+  .c-address {
+    width: 100%;
+  }
+  .c-mail {
+    width: 100%;
+  }
+  .price {
+    padding: 15rem 2rem 10rem;
+  }
+  .price table {
+    width: 100%;
+  }
+  .price table tr td:first-child {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=index.css.map */

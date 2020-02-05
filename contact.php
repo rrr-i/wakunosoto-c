@@ -20,7 +20,7 @@
       <!-- <h1 class="logo"><img src="../materials/logo/logo.svg" alt="wakunosotoロゴマーク"></h1> -->
       <h1><a href="./index.html">wa<span class="dot">・</span>ku<span class="dot">・</span>no<span
             class="dot">・</span>so<span class="dot">・</span>to<br><span>ミュージアム</span></a></h1>
-      <nav>
+      <nav class="pc">
         <ul class="flex">
           <li><a href="./information.html">施設のご案内</a></li>
           <li><a href="./price.html">ご利用料金</a></li>
@@ -58,6 +58,11 @@
           <?php if ( $prm == 'person' ): ?>
           <div class="tabContents tabContentsPerson">
             <h2>個人のお客様はこちらから</h2>
+            <div class="formDescription">
+              <p>下記フォームは全て埋めてください</p>
+              <p>お電話でのお問い合わせも受け付けております　TEL：03-333-3344</p>
+              <p>お問い合わせへのお返事は1~2営業日内にさせて頂きます</p>
+            </div>            
             <form action="">
               <p class="sex">
                 <input id="male" type="radio" name="sex" value="male">
@@ -85,6 +90,11 @@
           <?php if ( $prm == 'company' ): ?>
           <div class="tabContents tabContentsCorporate">
             <h2>法人様はこちらから</h2>
+            <div class="formDescription">
+              <p>下記フォームは全て埋めてください</p>
+              <p>お電話でのお問い合わせも受け付けております。TEL：03-333-3344</p>
+              <p>お問い合わせへのお返事は1~2営業日内にさせて頂きます</p>
+            </div>
             <form action="">
               <p>
                 <label for="">会社名 / 店舗名</label>
@@ -128,7 +138,7 @@
                 <input type="text">
               </p>
               <p class="c-industries">
-                <label for="industries">業種<span>複数回答可</span></label>
+                <label for="industries">業種</label>
                 <select name="company" id="company">
                   <option value="none">選択してください</option>
                   <option value="kabu">美容</option>
@@ -167,7 +177,7 @@
                 <label for="other">その他</label> -->
               </p>
               <p class="c-contactBox">
-                <label for="">お問い合わせ内容（出来るだけ具体的にご記入ください。）</label>
+                <label for="">お問い合わせ内容<span>（出来るだけ具体的にご記入ください。）</span></label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
               </p>
                 <button type="submit">送信する</button>

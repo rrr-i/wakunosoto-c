@@ -2,7 +2,7 @@
 $(function(){
   $(window).on("scroll", function () {
     var scrolly = $(window).scrollTop();
-    var bgsize = 70 + (scrolly / 10);
+    var bgsize = 70 + (scrolly / 20);
     if (bgsize > 70) {
       $('.infoVideo video').css('width', bgsize + '%');
     }
