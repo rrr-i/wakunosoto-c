@@ -1,0 +1,123 @@
+@import './var.sass'
+
+@media screen and (max-width: 959px)
+  header
+    .pc
+      display: none
+    .sp
+      display: block
+    .humberger
+      position: fixed
+      top: 3rem
+      right: 3rem
+      z-index: 999
+      padding: 1rem
+      cursor: pointer
+      &Border
+        width: 30px
+        height: 2px
+        background: $subBlack
+        margin-top: 1rem
+        transition: .6s
+        &:first-child
+          margin-top: 0
+    .humberger.active
+      .humbergerBorder
+        width: 30px
+        height: 2px
+        background: $red
+        margin-top: 1rem
+        transform: rotate(45deg)
+        transform-origin: left
+        transform-origin: 11px center
+        transition: .4s
+        &:first-child
+          margin-top: 0
+        &:last-child
+          transform: rotate(-45deg)
+          transform-origin: 6px center
+          transition: .4s
+    .spNavi
+      position: fixed
+      top: 0
+      left: 0
+      display: none
+      width: 100vw
+      height: 100vh
+      padding: 10rem
+      background: white
+      flex-direction: column
+      li
+        width: fit-content
+        margin-left: auto
+        a
+          padding: 2rem 0
+    .sns
+      margin-top: 3rem
+      padding: 1rem 0 0 0
+      border-top: 1px solid darken(white,12%)
+      border-left: none
+      a
+        margin: 0 5rem 0 0 
+        padding: 1rem    
+      li
+        margin-left: 0
+        &:last-child
+          a
+            margin-right: 0
+  .firstViewWrap figure figcaption
+    white-space: nowrap
+
+@media screen and (max-width: 767px)
+  header
+    position: absolute
+    h1 a
+      font-size: 2rem
+      .dot
+        margin: 0 -.25rem 0 -.45rem
+        font-size: 2rem
+  .content
+    h2
+      font-size: 2.5rem
+      line-height: 3.5rem
+    .concept
+      margin: 0 auto 40px
+    .concept,
+    .whatdoing
+      padding: 0 2rem
+    p
+      font-size: 1.25rem
+      line-height: 2rem 
+  .contact
+    padding: 15rem 4rem 10rem
+  .tabContents
+    width: 100%
+    .sex
+      margin-top: 2rem
+    input
+      height: 6rem
+      font-size: 2.25rem
+      &[type=radio]
+        height: 2.5rem
+    select
+      font-size: 1.5rem
+      padding: 1.5rem 5rem 1.5rem 1rem
+  .c
+    &-repName
+      width: 50%
+    &-postalCode,
+    &-phone,
+    &-fax
+      width: 40%
+    &-address
+      width: 100%
+    &-mail
+      width: 100%
+  .price
+    padding: 15rem 2rem 10rem
+    table
+      width: 100%
+      tr
+        td
+          &:first-child
+            width: 30%
