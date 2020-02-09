@@ -1,4 +1,3 @@
-
 $(function(){
   $(window).on("scroll", function() {
     var scrolly = $(window).scrollTop();
@@ -16,7 +15,6 @@ $(function(){
     if(opacity < 0.2){
       $('header h1').css('opacity', 0.2);
     };
-
   });
   $('.humberger').on('click',function(){
     $(this).toggleClass('active');
@@ -29,7 +27,7 @@ $(function(){
   $('.spNavi li a').on('click',function(){
   $('.spNavi').fadeOut(300);
     $('.humberger').removeClass('active');
-})
+});
   $('a[href^="#"]').click(function () {
     var speed = 400;
     var href = $(this).attr("href");

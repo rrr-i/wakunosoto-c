@@ -1079,8 +1079,8 @@ footer small {
     font-size: 2rem;
   }
   .firstViewWrap figure {
-    -webkit-transform: translate(-72%, -55%) scale(0.7);
-            transform: translate(-72%, -55%) scale(0.7);
+    -webkit-transform: translate(-72%, -45%) scale(0.7);
+            transform: translate(-72%, -45%) scale(0.7);
   }
   .content {
     padding: 50px 0;
@@ -1173,37 +1173,14 @@ footer small {
   .rules .rules-box:nth-child(4) span, .rules .rules-box:nth-child(4) h4 {
     color: #1EAC4B;
   }
-  .tabContents {
-    width: 100%;
-  }
-  .tabContents .sex {
-    margin-top: 2rem;
-  }
-  .tabContents input {
-    height: 6rem;
-    font-size: 2.25rem;
-  }
-  .tabContents input[type=radio] {
-    height: 2.5rem;
-  }
-  .tabContents select {
-    font-size: 1.5rem;
-    padding: 1.5rem 5rem 1.5rem 1rem;
-  }
-  .c-repName {
-    width: 50%;
-  }
-  .c-postalCode, .c-phone, .c-fax {
-    width: 40%;
-  }
-  .c-address {
-    width: 100%;
-  }
-  .c-mail {
-    width: 100%;
-  }
   .price {
     padding: 15rem 2rem 10rem;
+  }
+  .price h2 {
+    font-size: 2.5rem;
+  }
+  .price h2 span {
+    font-size: 1.2rem;
   }
   .price table {
     width: 100%;
@@ -1216,6 +1193,50 @@ footer small {
   }
   .price table tr td:first-child {
     width: 15%;
+  }
+  .tabContents {
+    width: 100%;
+  }
+  .tabContents h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .tabContents .formDescription {
+    padding: 1rem 2rem;
+  }
+  .tabContents .formDescription p {
+    margin: .5rem 0;
+    font-size: 1.25rem;
+  }
+  .tabContents label {
+    font-size: 1.5rem;
+  }
+  .tabContents .sex {
+    margin-top: 2rem;
+  }
+  .tabContents input {
+    height: 4rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  .tabContents input[type=radio] {
+    height: 1.5rem;
+  }
+  .tabContents select {
+    font-size: 1.25rem;
+    padding: 1rem 3rem 1rem 1rem;
+  }
+  .c-repName {
+    width: 50%;
+  }
+  .c-postalCode, .c-phone, .c-fax {
+    width: 40%;
+  }
+  .c-address {
+    width: 100%;
+  }
+  .c-mail {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
