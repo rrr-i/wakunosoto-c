@@ -1037,13 +1037,13 @@ footer p {
 }
 
 .shutter-a {
-  -webkit-transform: translateY(200vh);
-          transform: translateY(200vh);
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
 }
 
 .shutter-a.moved {
-  -webkit-transform: translateY(-200vh);
-          transform: translateY(-200vh);
+  -webkit-transform: translateX(-200vw);
+          transform: translateX(-200vw);
 }
 
 @media screen and (max-width: 959px) {
@@ -1068,11 +1068,15 @@ footer p {
     height: 2px;
     background: #555555;
     margin-top: 1rem;
-    -webkit-transition: .6s;
-    transition: .6s;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
   header .humbergerBorder:first-child {
     margin-top: 0;
+  }
+  header .humberger.active {
+    -webkit-transition: .4s;
+    transition: .4s;
   }
   header .humberger.active .humbergerBorder {
     width: 30px;
@@ -1090,6 +1094,8 @@ footer p {
   }
   header .humberger.active .humbergerBorder:first-child {
     margin-top: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
   header .humberger.active .humbergerBorder:last-child {
     -webkit-transform: rotate(-45deg);
@@ -1174,15 +1180,16 @@ footer p {
     font-size: 1.4rem;
   }
   .firstViewWrap figure {
-    -webkit-transform: translate(-70%, -45%) scale(0.7);
-            transform: translate(-70%, -45%) scale(0.7);
+    -webkit-transform: translate(-68%, -45%) scale(0.7);
+            transform: translate(-68%, -45%) scale(0.7);
   }
   .content {
     padding: 50px 0;
   }
   .content h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3.5rem;
+    letter-spacing: .1em;
   }
   .content .concept {
     margin: 0 auto 40px;
@@ -1279,17 +1286,18 @@ footer p {
   }
   .question-category {
     margin: 8rem 0 4rem;
+    padding: 1rem;
     font-size: 1.75rem;
   }
   .question-title {
     margin: 3rem 0 0 0;
-    padding: 3rem;
-    font-size: 1.4rem;
+    padding: 3rem 2rem;
+    font-size: 1.3rem;
   }
   .question-title-active {
     margin: 3rem 0 0 0;
-    padding: 3rem;
-    font-size: 1.4rem;
+    padding: 3rem 2rem;
+    font-size: 1.3rem;
   }
   .question-answer {
     padding: 0 5rem 3rem;
@@ -1308,7 +1316,7 @@ footer p {
     width: 100%;
   }
   .price table tr th {
-    padding: 3rem 0;
+    padding: 2rem 0;
     font-size: 1.25rem;
   }
   .price table tr td {

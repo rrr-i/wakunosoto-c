@@ -637,9 +637,9 @@ footer
   pointer-events: none
   transition: transform 1.2s ease-in-out
 .shutter-a
-  transform: translateY(200vh)
+  transform: translateX(100vw)
 .shutter-a.moved
-  transform: translateY(-200vh)
+  transform: translateX(-200vw)
 
 @media screen and (max-width: 959px)
   header
@@ -660,10 +660,11 @@ footer
         height: 2px
         background: $subBlack
         margin-top: 1rem
-        transition: .6s
+        transition: .4s
         &:first-child
           margin-top: 0
     .humberger.active
+      transition: .4s
       .humbergerBorder
         width: 30px
         height: 2px
@@ -675,6 +676,7 @@ footer
         transition: .4s
         &:first-child
           margin-top: 0
+          transition: .4s
         &:last-child
           transform: rotate(-45deg)
           transform-origin: 6px center
@@ -736,12 +738,13 @@ footer
           font-size: 1.4rem
   .firstViewWrap
     figure
-      transform: translate(-70%, -45%) scale(.7)
+      transform: translate(-68%, -45%) scale(.7)
   .content
     padding: 50px 0
     h2
-      font-size: 2.5rem
+      font-size: 2rem
       line-height: 3.5rem
+      letter-spacing: .1em
     .concept
       margin: 0 auto 40px
     .concept,
@@ -814,15 +817,16 @@ footer
       width: 90%
     &-category
       margin: 8rem 0 4rem
+      padding: 1rem
       font-size: 1.75rem
     &-title
       margin: 3rem 0 0 0
-      padding: 3rem
-      font-size: 1.4rem
+      padding: 3rem 2rem
+      font-size: 1.3rem
       &-active
         margin: 3rem 0 0 0
-        padding: 3rem
-        font-size: 1.4rem
+        padding: 3rem 2rem
+        font-size: 1.3rem
     &-answer
       padding: 0 5rem 3rem
       font-size: 1.2rem
@@ -836,7 +840,7 @@ footer
       width: 100%
       tr
         th
-          padding: 3rem 0
+          padding: 2rem 0
           font-size: 1.25rem
         td
           padding: 2rem 1rem
