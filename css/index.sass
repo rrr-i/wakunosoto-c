@@ -357,7 +357,7 @@ header
 //  price
 // ====================================================
 .price
-  padding: 15rem 0 10rem 0
+  padding: 5rem 0
   h2
     margin-bottom: 5rem
     line-height: 1.6rem
@@ -409,9 +409,39 @@ header
           font-weight: bold
           border: 1px solid darken(white,30%)
           text-align: left
+// ====================================================
+// access
+// ====================================================
+.access
+  width: 100%
+  margin: 15rem 0 5rem
+  h2
+    font-size: 3.4rem
+    text-align: center
+  iframe
+    width: 700px
+    height: 250px
+    margin: 4rem auto 0
+    display: block
+  &-info
+    width: 700px
+    margin: 0 auto
+    p
+      font-weight: 100
+      padding: 0 1.75rem
+      font-size: 1.75rem
+      &:first-child
+        margin: 5rem 0 1rem 0
+        padding: 1rem
+        border-left: 5px solid $black
+        font-size: 2rem
+        font-weight: bold
+// ====================================================
+// question
+// ====================================================
 .question
   width: 100%
-  margin: 10rem 0 5rem
+  margin: 15rem 0 5rem
   h2
     font-size: 3.4rem
     text-align: center
@@ -815,8 +845,27 @@ footer
       border-right: none      
       span,h4
         color: $green
+  .access
+    width: 90%
+    margin: 15rem auto 5rem
+    h2
+      font-size: 2.5rem
+      text-align: center
+    iframe
+      width: 100%
+      height: 150px
+      margin: 4rem auto 0
+      display: block
+    &-info
+      width: 100%
+      margin: 0 auto
+      p
+        padding: 0 1.75rem
+        font-size: 1.2rem
+        &:first-child
+          margin: 4rem 0 1rem 0
+          font-size: 1.75rem
   .question
-    margin: 5rem 0
     h2
       font-size: 2.5rem
     &-wrap
@@ -837,7 +886,7 @@ footer
       padding: 0 5rem 3rem
       font-size: 1.2rem
   .price
-    padding: 15rem 2rem 10rem
+    padding: 5rem 2rem
     h2
       font-size: 2.5rem
       span

@@ -22,7 +22,7 @@
       <nav class="pc">
         <ul class="flex">
           <li><a href="./information.html">施設のご案内</a></li>
-          <li><a href="./price.html">ご利用料金</a></li>
+          <li><a href="./access.html">アクセス</a></li>
           <li><a href="./contact.php?prm=person">お問い合わせ</a></li>
           <ul class="sns flex">
             <li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -38,7 +38,7 @@
           </ul>
           <ul class="flex spNavi">
             <li><a href="./information.html">施設のご案内</a></li>
-            <li><a href="./price.html">ご利用料金</a></li>
+            <li><a href="./access.html">アクセス</a></li>
             <li><a href="./contact.php?prm=person">お問い合わせ</a></li>
             <ul class="sns flex">
               <li><a href=""><i class="fab fa-twitter"></i></a></li>

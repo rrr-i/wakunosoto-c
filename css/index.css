@@ -665,7 +665,7 @@ header .sp {
 }
 
 .price {
-  padding: 15rem 0 10rem 0;
+  padding: 5rem 0;
 }
 
 .price h2 {
@@ -739,9 +739,45 @@ header .sp {
   text-align: left;
 }
 
+.access {
+  width: 100%;
+  margin: 15rem 0 5rem;
+}
+
+.access h2 {
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.access iframe {
+  width: 700px;
+  height: 250px;
+  margin: 4rem auto 0;
+  display: block;
+}
+
+.access-info {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.access-info p {
+  font-weight: 100;
+  padding: 0 1.75rem;
+  font-size: 1.75rem;
+}
+
+.access-info p:first-child {
+  margin: 5rem 0 1rem 0;
+  padding: 1rem;
+  border-left: 5px solid #333333;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .question {
   width: 100%;
-  margin: 10rem 0 5rem;
+  margin: 15rem 0 5rem;
 }
 
 .question h2 {
@@ -1289,8 +1325,31 @@ footer p {
   .rules .rules-box:nth-child(4) span, .rules .rules-box:nth-child(4) h4 {
     color: #1EAC4B;
   }
-  .question {
-    margin: 5rem 0;
+  .access {
+    width: 90%;
+    margin: 15rem auto 5rem;
+  }
+  .access h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .access iframe {
+    width: 100%;
+    height: 150px;
+    margin: 4rem auto 0;
+    display: block;
+  }
+  .access-info {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .access-info p {
+    padding: 0 1.75rem;
+    font-size: 1.2rem;
+  }
+  .access-info p:first-child {
+    margin: 4rem 0 1rem 0;
+    font-size: 1.75rem;
   }
   .question h2 {
     font-size: 2.5rem;
@@ -1318,7 +1377,7 @@ footer p {
     font-size: 1.2rem;
   }
   .price {
-    padding: 15rem 2rem 10rem;
+    padding: 5rem 2rem;
   }
   .price h2 {
     font-size: 2.5rem;
