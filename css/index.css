@@ -1037,13 +1037,13 @@ footer p {
 }
 
 .shutter-a {
-  -webkit-transform: translateX(200vw);
-          transform: translateX(200vw);
+  -webkit-transform: translateY(200vh);
+          transform: translateY(200vh);
 }
 
 .shutter-a.moved {
-  -webkit-transform: translateX(-200vw);
-          transform: translateX(-200vw);
+  -webkit-transform: translateY(-200vh);
+          transform: translateY(-200vh);
 }
 
 @media screen and (max-width: 959px) {
@@ -1059,6 +1059,8 @@ footer p {
     right: 3rem;
     z-index: 999;
     padding: 1rem;
+    -webkit-transition: .4s;
+    transition: .4s;
     cursor: pointer;
   }
   header .humbergerBorder {
@@ -1143,6 +1145,12 @@ footer p {
     -webkit-transform: translate(-72%, -55%) scale(0.85);
             transform: translate(-72%, -55%) scale(0.85);
   }
+  .price table {
+    width: 90%;
+  }
+  .question-wrap {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1156,12 +1164,18 @@ footer p {
     margin: 0 -.25rem 0 -.45rem;
     font-size: 2rem;
   }
+  header .sns a {
+    margin: 0 3rem 0 0;
+  }
   header .spNavi {
     padding: 10rem 4rem;
   }
+  header .spNavi li a {
+    font-size: 1.4rem;
+  }
   .firstViewWrap figure {
-    -webkit-transform: translate(-72%, -45%) scale(0.7);
-            transform: translate(-72%, -45%) scale(0.7);
+    -webkit-transform: translate(-70%, -45%) scale(0.7);
+            transform: translate(-70%, -45%) scale(0.7);
   }
   .content {
     padding: 50px 0;
@@ -1254,6 +1268,33 @@ footer p {
   .rules .rules-box:nth-child(4) span, .rules .rules-box:nth-child(4) h4 {
     color: #1EAC4B;
   }
+  .question {
+    margin: 5rem 0;
+  }
+  .question h2 {
+    font-size: 2.5rem;
+  }
+  .question-wrap {
+    width: 90%;
+  }
+  .question-category {
+    margin: 8rem 0 4rem;
+    font-size: 1.75rem;
+  }
+  .question-title {
+    margin: 3rem 0 0 0;
+    padding: 3rem;
+    font-size: 1.4rem;
+  }
+  .question-title-active {
+    margin: 3rem 0 0 0;
+    padding: 3rem;
+    font-size: 1.4rem;
+  }
+  .question-answer {
+    padding: 0 5rem 3rem;
+    font-size: 1.2rem;
+  }
   .price {
     padding: 15rem 2rem 10rem;
   }
@@ -1272,10 +1313,10 @@ footer p {
   }
   .price table tr td {
     padding: 2rem 1rem;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   .price table tr td:first-child {
-    width: 20%;
+    width: 30%;
     font-size: 1rem;
   }
   .tabContents {

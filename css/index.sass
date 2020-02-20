@@ -637,9 +637,9 @@ footer
   pointer-events: none
   transition: transform 1.2s ease-in-out
 .shutter-a
-  transform: translateX(200vw)
+  transform: translateY(200vh)
 .shutter-a.moved
-  transform: translateX(-200vw)
+  transform: translateY(-200vh)
 
 @media screen and (max-width: 959px)
   header
@@ -653,6 +653,7 @@ footer
       right: 3rem
       z-index: 999
       padding: 1rem
+      transition: .4s
       cursor: pointer
       &Border
         width: 30px
@@ -711,6 +712,12 @@ footer
   .firstViewWrap
     figure
       transform: translate(-72%, -55%) scale(.85)
+  .price
+    table
+      width: 90%
+  .question
+    &-wrap
+      width: 80%
 @media screen and (max-width: 767px)
   header
     position: absolute
@@ -719,11 +726,17 @@ footer
       .dot
         margin: 0 -.25rem 0 -.45rem
         font-size: 2rem
+    .sns
+      a
+        margin: 0 3rem 0 0
     .spNavi
       padding: 10rem 4rem
+      li
+        a
+          font-size: 1.4rem
   .firstViewWrap
     figure
-      transform: translate(-72%, -45%) scale(.7)
+      transform: translate(-70%, -45%) scale(.7)
   .content
     padding: 50px 0
     h2
@@ -793,6 +806,26 @@ footer
       border-right: none      
       span,h4
         color: $green
+  .question
+    margin: 5rem 0
+    h2
+      font-size: 2.5rem
+    &-wrap
+      width: 90%
+    &-category
+      margin: 8rem 0 4rem
+      font-size: 1.75rem
+    &-title
+      margin: 3rem 0 0 0
+      padding: 3rem
+      font-size: 1.4rem
+      &-active
+        margin: 3rem 0 0 0
+        padding: 3rem
+        font-size: 1.4rem
+    &-answer
+      padding: 0 5rem 3rem
+      font-size: 1.2rem
   .price
     padding: 15rem 2rem 10rem
     h2
@@ -807,9 +840,9 @@ footer
           font-size: 1.25rem
         td
           padding: 2rem 1rem
-          font-size: 1.25rem
+          font-size: 1.1rem
           &:first-child
-            width: 20%        
+            width: 30%        
             font-size: 1rem
   .tabContents
     width: 100%
