@@ -105,6 +105,9 @@ header
     left: 50%
     transform: translate(-72%,-55%)
     z-index: 5
+    text-align: center
+    img
+      width: 80%
     figcaption
       margin-top: 3rem
       font-weight: normal
@@ -275,7 +278,7 @@ header
 // ====================================================
 .rules
   padding: 100px 0
-  background: darken(white, 7%)
+  background: darken(white, 5%)
   // background: white
   > div
     max-width: 1100px
@@ -368,7 +371,7 @@ header
       font-size: 1.5rem
       font-weight: 300
   table
-    width: 800px
+    width: 920px
     margin: 0 auto
     border-collapse: collapse
     tr
@@ -400,6 +403,59 @@ header
           font-weight: bold
           border: 1px solid darken(white,30%)
           text-align: left
+.question
+  width: 100%
+  margin: 10rem 0 5rem
+  h2
+    font-size: 3.4rem
+    text-align: center
+  &-wrap
+    width: 50%
+    margin: 0 auto
+  &-category
+    margin: 10rem 0 4rem
+    padding: 1rem 2rem
+    color: $black
+    font-size: 2.4rem
+    text-align: left
+    border-left: 5px solid $black
+    // border-bottom: 3px solid $red
+  &-list
+    background: darken(white, 5%)
+  &-title
+    margin: 3rem 0 0 0
+    padding: 4rem 3rem
+    color: $black
+    font-size: 2rem
+    letter-spacing: .1em
+    cursor: pointer
+    &::before
+      content: '\f0d7'
+      font-family: 'Font Awesome 5 Free'
+      font-weight: 900
+      color: $black
+      margin-right: 10px
+    &-active
+      margin: 3rem 0 0 0
+      padding: 4rem 3rem
+      color: $black
+      font-size: 2rem
+      letter-spacing: .1em
+      cursor: pointer
+      &::before
+        content: '\f0d8'
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        color: $black
+        margin-right: 10px
+  &-answer
+    display: none
+    margin: 1.5rem 0 0
+    padding: 0rem 6rem 4rem
+    line-height: 2em
+    letter-spacing: .15em
+    font-size: 1.8rem
+    font-weight: 100
 // ====================================================
 //  contact
 // ====================================================
@@ -469,13 +525,14 @@ header
       outline: 1px solid #0071e3
   textarea
     width: 100%
-    min-height: 10rem
+    min-height: 200px
     padding: 2rem
     font-size: 2rem
     font-weight: 100
     border: 1px solid darken(white,20%)
     border-radius: 5px
     resize: none
+    overflow: hidden
     &:focus
       outline: 1px solid #0071e3
   select
@@ -559,7 +616,7 @@ footer
   .footer-logoSvg
     width: 80px
     margin: 0 auto 20px
-  small
+  p
     color: $gray
     letter-spacing: .25rem
 
@@ -572,7 +629,8 @@ footer
   left: 0
   width: 200vw
   height: 100vh
-  background-color: darken(white,7%)
+  // background-color: linear-gradient($red,$blue)
+  background-color: $black
   // background-color: #F0C010
   // background-color: white
   z-index: 1000
@@ -582,10 +640,6 @@ footer
   transform: translateX(200vw)
 .shutter-a.moved
   transform: translateX(-200vw)
-// .shutter-b
-//   transform: translateX(-200vw)
-// .shutter-b.moved
-//   transform: translateX(100vw)
 
 @media screen and (max-width: 959px)
   header
@@ -665,6 +719,8 @@ footer
       .dot
         margin: 0 -.25rem 0 -.45rem
         font-size: 2rem
+    .spNavi
+      padding: 10rem 4rem
   .firstViewWrap
     figure
       transform: translate(-72%, -45%) scale(.7)
@@ -686,7 +742,7 @@ footer
   .rules
     padding: 50px 0
     h3
-      font-size: 1.6rem
+      font-size: 1.4rem
     > div
       padding: 0 4%
     .rules-box
@@ -758,7 +814,7 @@ footer
   .tabContents
     width: 100%
     h2
-      font-size: 2.5rem
+      font-size: 2rem
       line-height: 3.5rem
     .formDescription
       padding: 1rem 2rem
@@ -778,6 +834,11 @@ footer
     select
       font-size: 1.25rem
       padding: 1rem 3rem 1rem 1rem
+    textarea
+      font-size: 1.5rem
+    button
+      padding: 1.5rem
+      font-size: 1.5rem
   .c
     &-repName
       width: 50%
@@ -790,5 +851,5 @@ footer
     &-mail
       width: 100%
   footer
-    small
+    p
       font-size: 1rem

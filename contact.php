@@ -77,7 +77,7 @@
               </p>
               <p>
                 <label for="">ご用件内容</label>
-                <textarea name="text" id="text" value="field" cols="30" rows="10"></textarea>
+                <textarea class="contact-ta" name="text" id="text" value="field" cols="30" rows="10"></textarea>
               </p>
               <button type="submit">送信する</button>
             </form>
@@ -177,7 +177,7 @@
               </p>
               <p class="c-contactBox">
                 <label for="">お問い合わせ内容<span>（出来るだけ具体的にご記入ください。）</span></label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="contact-ta" name="" id="" cols="30" rows="10"></textarea>
               </p>
                 <button type="submit">送信する</button>
             </form>
@@ -189,15 +189,24 @@
       </div>
     </div>
     <footer>
-      <small>©︎copyright wakunosotoミュージアム公式</small>
+      <p>©︎copyright wakunosotoミュージアム公式</p>
     </footer>
   </div>
   <!--endWrap-->
   <div class="shutter shutter-a"></div>
-  <!-- <script src="./js/jquery-3.2.1.min.js"></script> -->
+  <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
   <script src="./js/barba-custom.js" type="text/javascript"></script>
   <script src="./js/main.js"></script>
+  <script>
+  $(document).ready(function () {
+  if ($('.contact-ta').length) {
+    const sampleTextarea = document.querySelector('.contact-ta');
+    sampleTextarea.addEventListener('input', () => {
+      sampleTextarea.style.height = "50px";
+      sampleTextarea.style.height = sampleTextarea.scrollHeight + "px";
+    });
+  }
+});</script>
 </body>
-
 </html>

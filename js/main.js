@@ -1,8 +1,8 @@
 $(function(){
   $(window).on("scroll", function() {
     var scrolly = $(window).scrollTop();
-    var bgsize = 70 + (scrolly / 20);
-    if (bgsize > 70) {
+    var bgsize = 60 + (scrolly / 10);
+    if (bgsize > 60) {
       $('.infoVideo video').css('width', bgsize + '%');
     };
     var opacity = 1 - (scrolly / 500);
@@ -16,6 +16,12 @@ $(function(){
       $('header h1').css('opacity', 0.2);
     };
   });
+  $('a').on('click',function(){
+    $('h1').css('opacity',1);
+    $('body,html').animate({
+      scrollTop: 0
+    },0);
+  });
   $('.humberger').on('click',function(){
     $(this).toggleClass('active');
   if($(this).hasClass('active') == true){
@@ -23,11 +29,16 @@ $(function(){
   }else {
     $('.spNavi').fadeOut();
   }
-});
+　});
   $('.spNavi li a').on('click',function(){
-  $('.spNavi').fadeOut(300);
+  　$('.spNavi').fadeOut(300);
     $('.humberger').removeClass('active');
-});
+　});
+　$('.question-title').on('click',function(){
+　　$(this).next().slideToggle(300);
+    $(this).toggleClass('question-title-active');
+
+　});
   $('a[href^="#"]').click(function () {
     var speed = 400;
     var href = $(this).attr("href");
@@ -36,15 +47,4 @@ $(function(){
     $('body,html').animate({ scrollTop: position }, speed);
     return false;
   });
-});
-
-
-$(document).ready(function(){
-  if ($('.micropostArea').length) {
-    const sampleTextarea = document.querySelector('.micropostArea');
-    sampleTextarea.addEventListener('input', () => {
-      sampleTextarea.style.height = "20px";
-      sampleTextarea.style.height = sampleTextarea.scrollHeight + "px";
-    });
-  }
 });

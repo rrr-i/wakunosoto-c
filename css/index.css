@@ -334,6 +334,11 @@ header .sp {
   -webkit-transform: translate(-72%, -55%);
           transform: translate(-72%, -55%);
   z-index: 5;
+  text-align: center;
+}
+
+.firstViewWrap figure img {
+  width: 80%;
 }
 
 .firstViewWrap figure figcaption {
@@ -536,7 +541,7 @@ header .sp {
 
 .rules {
   padding: 100px 0;
-  background: #ededed;
+  background: #f2f2f2;
 }
 
 .rules > div {
@@ -675,7 +680,7 @@ header .sp {
 }
 
 .price table {
-  width: 800px;
+  width: 920px;
   margin: 0 auto;
   border-collapse: collapse;
 }
@@ -718,6 +723,78 @@ header .sp {
   font-weight: bold;
   border: 1px solid #b3b3b3;
   text-align: left;
+}
+
+.question {
+  width: 100%;
+  margin: 10rem 0 5rem;
+}
+
+.question h2 {
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.question-wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.question-category {
+  margin: 10rem 0 4rem;
+  padding: 1rem 2rem;
+  color: #333333;
+  font-size: 2.4rem;
+  text-align: left;
+  border-left: 5px solid #333333;
+}
+
+.question-list {
+  background: #f2f2f2;
+}
+
+.question-title {
+  margin: 3rem 0 0 0;
+  padding: 4rem 3rem;
+  color: #333333;
+  font-size: 2rem;
+  letter-spacing: .1em;
+  cursor: pointer;
+}
+
+.question-title::before {
+  content: '\f0d7';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #333333;
+  margin-right: 10px;
+}
+
+.question-title-active {
+  margin: 3rem 0 0 0;
+  padding: 4rem 3rem;
+  color: #333333;
+  font-size: 2rem;
+  letter-spacing: .1em;
+  cursor: pointer;
+}
+
+.question-title-active::before {
+  content: '\f0d8';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #333333;
+  margin-right: 10px;
+}
+
+.question-answer {
+  display: none;
+  margin: 1.5rem 0 0;
+  padding: 0rem 6rem 4rem;
+  line-height: 2em;
+  letter-spacing: .15em;
+  font-size: 1.8rem;
+  font-weight: 100;
 }
 
 .contact {
@@ -818,13 +895,14 @@ header .sp {
 
 .tabContents textarea {
   width: 100%;
-  min-height: 10rem;
+  min-height: 200px;
   padding: 2rem;
   font-size: 2rem;
   font-weight: 100;
   border: 1px solid #cccccc;
   border-radius: 5px;
   resize: none;
+  overflow: hidden;
 }
 
 .tabContents textarea:focus {
@@ -938,7 +1016,7 @@ footer .footer-logoSvg {
   margin: 0 auto 20px;
 }
 
-footer small {
+footer p {
   color: #cccccc;
   letter-spacing: .25rem;
 }
@@ -949,7 +1027,7 @@ footer small {
   left: 0;
   width: 200vw;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #333333;
   z-index: 1000;
   pointer-events: none;
   -webkit-transition: -webkit-transform 1.2s ease-in-out;
@@ -1078,6 +1156,9 @@ footer small {
     margin: 0 -.25rem 0 -.45rem;
     font-size: 2rem;
   }
+  header .spNavi {
+    padding: 10rem 4rem;
+  }
   .firstViewWrap figure {
     -webkit-transform: translate(-72%, -45%) scale(0.7);
             transform: translate(-72%, -45%) scale(0.7);
@@ -1107,7 +1188,7 @@ footer small {
     padding: 50px 0;
   }
   .rules h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .rules > div {
     padding: 0 4%;
@@ -1201,7 +1282,7 @@ footer small {
     width: 100%;
   }
   .tabContents h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 3.5rem;
   }
   .tabContents .formDescription {
@@ -1229,6 +1310,13 @@ footer small {
     font-size: 1.25rem;
     padding: 1rem 3rem 1rem 1rem;
   }
+  .tabContents textarea {
+    font-size: 1.5rem;
+  }
+  .tabContents button {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
   .c-repName {
     width: 50%;
   }
@@ -1241,7 +1329,7 @@ footer small {
   .c-mail {
     width: 100%;
   }
-  footer small {
+  footer p {
     font-size: 1rem;
   }
 }
